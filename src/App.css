@@ -1,0 +1,74 @@
+main {
+	width: 90vw;
+	margin: auto;
+}
+
+.container {
+	padding: 5rem 0rem;
+	display: grid;
+	row-gap: 1.5rem;
+}
+
+.text {
+	text-align: center;
+	font-size: 3.5rem;
+	margin-bottom: 2.5rem;
+	letter-spacing: 2px;
+}
+
+.countries {
+	display: grid;
+	grid-gap: 2rem;
+	min-height: 90vh;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(auto, 1fr));
+}
+
+.country {
+	border: 1px solid #ccc;
+	padding: 2rem 1rem;
+	border-radius: 0.25rem;
+	box-shadow: 1px 1px 3px #ccc, -1px -1px 3px #ccc;
+}
+
+.country-name {
+	text-decoration: underline;
+	margin-bottom: 1.5rem;
+}
+.cities {
+	padding: 0.5rem 0.25rem;
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+.btn {
+	border: transparent;
+	padding: 0.5rem;
+	border-radius: 0.25rem;
+	cursor: pointer;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	font-size: 1rem;
+}
+
+.city-btn {
+	background: #f5d8d8;
+}
+.city-btn:hover,
+.selected-city {
+	color: #fff;
+	background-color: #9d4444;
+}
+
+.capital-btn {
+	background-color: #c9c1d6;
+}
+.capital-btn:hover,
+.selected-capital {
+	background-color: #b28cee;
+}
+
+.errors {
+	background-color: red;
+	color: #fff;
+}
